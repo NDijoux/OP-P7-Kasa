@@ -1,7 +1,8 @@
 .footerContainer {
     position: relative;
-    width: 375px;
+    width: 1440px;
     height: 209px;
+    top: 4333px;
 
     background: #000000;
 }
@@ -21,6 +22,7 @@
     top: 64.11%;
     bottom: 13.88%;
 
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -31,6 +33,7 @@
     display: flex;
     align-items: flex-end;
     text-align: center;
+    justify-content: center;
 
     color: #FFFFFF;
 }
