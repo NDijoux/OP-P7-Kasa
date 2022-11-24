@@ -4,7 +4,7 @@ import error from '../assets/error.png';
 import { Link } from 'react-router-dom';
 
 
-function notFound() {
+function NotFound() {
     return (
         <div className="error">
             <div>
@@ -20,4 +20,4 @@ function notFound() {
     );
 }
 
-export default notFound
+export default NotFound
