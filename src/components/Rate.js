@@ -1,10 +1,20 @@
-import { ReactDOM } from 'react-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStarSharp } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
+import Star from '../assets/Star.png';
+import EmptyStar from "../assets/EmptyStar.png";
 
-function Rate(rating) {
+
+ function Rate(rating) {
     const range = [1, 2, 3, 4, 5];
 
-    const star = <FontAwesomeIcon icon={faStarSharp} />
-    ReactDOM.render(star, document.body)
+    return range.map((rangeRater, key) =>
+        rangeRater <= rating.rate ? (
+            <img src={Star} alt='etoile pleine' key={key} className='star' />
+        ) : (
+            <img src={EmptyStar} alt='etoile vide' key={key} className='empty__star' />
+        )
+    );
 }
+
+export default Rate
+
+   // construire div + classname avec le range.map = en fonction de l'ID = verifier > ou =  qui definit une valeur grise ou rouge en fonction
