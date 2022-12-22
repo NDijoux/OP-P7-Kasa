@@ -29,8 +29,64 @@ function Slider(rental) {
         const newIndex = lastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     }
+
+    const multipleSlide = () => {
+        if (slides.length - 1 >= 1) {
+           return true;
+        }
+        return false;
+     };
+  
+     return multipleSlide() ? (
+        <div className="slider__styles">
+           <img
+              className="arrow left__arrow"
+              src={ArrowLeft}
+              alt="flèche vers la gauche"
+              onClick={previous}
+           ></img>
+  
+           <img
+              className="arrow right__arrow"
+              src={ArrowRight}
+              alt="flèche vers la droite"
+              onClick={next}
+           ></img>
+           {slides.map((slide, index) => {
+              return (
+                 <div
+                    className={
+                       index === currentIndex
+                          ? `${right ? "right" : "left"}`
+                          : "slide__hidden"
+                    }
+                    key={index}
+                 >
+                    {index === currentIndex && (
+                       <img
+                          src={slide}
+                          alt="location"
+                          className={
+                             right ? "slide__styles-right" : "slide__styles-left"
+                          }
+                       ></img>
+                    )}
+                 </div>
+              );
+           })}
+           <span className="number__styles">
+              {currentIndex + 1}/{slides.length}
+           </span>
+        </div>
+     ) : (
+        <img
+           src={`${slides[currentIndex]}`}
+           className="slide__styles-one"
+           alt="location"
+        ></img>
+     );
 }
 
-//export default Slider;
+export default Slider;
 
 // LTD : gestion une image ou plusieurs + incorporation ou non des fleches actives. 

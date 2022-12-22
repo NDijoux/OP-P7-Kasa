@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/components/Banner.css';
 import logo from '../assets/logo.png';
-import { link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Banner() {
@@ -11,10 +11,18 @@ function Banner() {
                 <img src={logo} alt='Kasa' className='headerLogo' />
                 <ul>
                     <li>
-                        <link className='headerLink'>Accueil</link>
+                        <Link 
+                        to={`/`}
+                        className='headerLink'>
+                            Accueil
+                        </Link>
                     </li>
                     <li>
-                        <link className='headerLink'>A propos</link>
+                        <Link
+                        to={`/About`}
+                        className='headerLink'>
+                            A propos
+                        </Link>
                     </li>
                 </ul>
             </nav>

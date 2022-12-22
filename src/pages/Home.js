@@ -16,9 +16,9 @@ function Home() {
             <div className='homeGallery'>
                 {Data.map((location) => (
                     <Link
-                    // to={`/Lodging/${location.id}`}
-                    // className='location__token'
-                    // key={location.id}
+                     to={`/Lodging/${location.id}`}
+                     className='location__token'
+                     key={location.id}
                     >
                         <img src={location.pictures} alt='location' className='location__img' />
                         <div className='location__title'>

@@ -27,14 +27,14 @@ function DropDown({ txt, title, txtArray }) {
             </button>
             {txtArray ? (
                 <div className="dropdown__array">
-                    {txtArray.map((txte, e) => (
+                    {txtArray.map((info, e) => (
                         <p className="dropdown__array__p" key={e}>
-                            {txte}
+                            {info}
                         </p>
                     ))}
                 </div>
             ) : (
-                <p className="dropdown__p">{txt}</p>
+                <p className="dropdown__p">{info}</p>
             )}
         </div>
     ) : (

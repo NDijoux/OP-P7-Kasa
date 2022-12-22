@@ -54,7 +54,7 @@
     margin: 30px;
 }
 
-/*.location__token {
+.location__token {
     display: flex;
     position: relative;
     align-items: flex-end;
@@ -65,7 +65,7 @@
     max-height: 340px;
     margin: 4.5%;
     border-radius: 10px;
-}*/
+}
 
 .location__img {
     width: 350px;
