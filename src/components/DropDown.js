@@ -2,18 +2,18 @@
 // utiliser const false ou true sur ustate pour voir s'il est open ou non 
 
 import React, { useState } from "react";
-import ReactDOM from 'react-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import ArrowTop from '../assets/ArrowTop.png';
+import ArrowDown from '../assets/ArrowDown.png';
 
-function DropDown({ txt, title, txtArray }) {
+function DropDown({ info, title, txtArray }) {
     const [dpOpen, dpClosed] = useState(false);
 
-    const chevronUp = <FontAwesomeIcon icon={faChevronUp} />
+    /*const chevronUp = <FontAwesomeIcon icon={faChevronUp} />
     const chevronDown = <FontAwesomeIcon icon={faChevronDown} />
 
     ReactDOM.render(chevronUp, chevronDown, document.body)
+
+    // à modifier plus = JS 18 non compatible */
 
     return dpOpen ? (
         <div>
@@ -23,7 +23,7 @@ function DropDown({ txt, title, txtArray }) {
                 onClick={() => dpClosed(false)}
             >
                 <span>{title}</span>
-                <i>{chevronUp}</i>
+                <img src={ArrowTop} alt="flèche du haut" />
             </button>
             {txtArray ? (
                 <div className="dropdown__array">
@@ -44,7 +44,7 @@ function DropDown({ txt, title, txtArray }) {
             onClick={() => dpClosed(true)}
         >
             <span>{title}</span>
-            <i>{chevronDown}</i>
+            <img src={ArrowDown} alt="flèche du bas" />
         </button>
     );
 }

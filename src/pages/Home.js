@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Data from '../data/Data.json';
 import { Link } from 'react-router-dom';
 import '../style/pages/Home.css';
 import BackgroundHome from '../assets/backgroundhome.png';
 
 function Home() {
+    
+    const [coverImg] = useState(0);
+
+
     return (
         <div className='homeContainer'>
             <section className='homeSection'>
@@ -20,7 +24,11 @@ function Home() {
                      className='location__token'
                      key={location.id}
                     >
-                        <img src={location.pictures} alt='location' className='location__img' />
+                        <img 
+                        src={location.pictures[coverImg]} 
+                        alt='location' 
+                        className='location__img' 
+                        />
                         <div className='location__title'>
                             <span>{location.title}</span>
                         </div>

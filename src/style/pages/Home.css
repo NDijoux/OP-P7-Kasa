@@ -44,6 +44,8 @@
 
 /* Gallery */
 
+/* background rouge ? */
+
 .homeGallery {
     display: flex;
     flex-wrap: wrap;
@@ -85,3 +87,36 @@
     font-size: 18px;
     color: #FFFFFF;
 }
+
+/* Mobile version */
+/*
+@media all and (max-width:768px) {
+    .homeSection{
+        height: 111px;
+        max-height: 223px;
+        min-height: 111px;
+        margin: 0;
+    }
+    section p{
+        font-size: 24px;
+        width: 59%;
+        left: 10%;
+    }
+    .homeImg{
+        border-radius: 10px;
+        height: 100%;
+    }
+    .homeImg img{
+        height: 100%;
+    }
+    .homeGallery{
+        background: none;
+        width: 100%;
+        margin: 10px;
+    }
+    .location__img{
+        width: 100%;
+        height: 255px;
+        max-width: 350px;
+    }
+} */

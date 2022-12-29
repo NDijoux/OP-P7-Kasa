@@ -89,4 +89,4 @@ function Slider(rental) {
 
 export default Slider;
 
-// LTD : gestion une image ou plusieurs + incorporation ou non des fleches actives. 
+ 

@@ -56,12 +56,12 @@ function Lodging() {
                           <div className="drop__down">
                              <DropDown
                                 title={"Description"}
-                                txt={rental.description}
+                                info={rental.description}
                              />
                           </div>
                           <div className="drop__down">
                              <DropDown
-                                title={"Équipements"}
+                                title={"Équipements"}S
                                 txtArray={rental.equipments}
                              />
                           </div>

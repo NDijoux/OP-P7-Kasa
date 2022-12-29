@@ -38,7 +38,7 @@ function About() {
             <div className="dropdown">
                 {contents.map((content) => (
                     <div className="dropdown__content" key={content.id}>
-                        <DropDown txt={content.text} title={content.value} />
+                        <DropDown info={content.text} title={content.value} />
                     </div>
                 ))}
             </div>
