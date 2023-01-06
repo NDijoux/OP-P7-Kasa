@@ -88,16 +88,16 @@
     color: #FFFFFF;
 }
 
-/* Mobile version */
-/*
-@media all and (max-width:768px) {
+/* Mobile Version */
+
+@media (max-width:768px) {
     .homeSection{
         height: 111px;
         max-height: 223px;
         min-height: 111px;
         margin: 0;
     }
-    section p{
+    .homeSection p{
         font-size: 24px;
         width: 59%;
         left: 10%;
@@ -119,4 +119,4 @@
         height: 255px;
         max-width: 350px;
     }
-} */
+} 

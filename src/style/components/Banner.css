@@ -32,3 +32,27 @@ li a {
 li a:hover {
     text-decoration: underline;
 }
+
+/* Mobile */
+
+@media (max-width:768px) {
+
+    nav{
+        margin-top: 4%;
+    }
+
+    .headerLogo{
+        height: 47px;
+        width: 145px;
+    }
+
+    nav li{
+        padding: 0 10px 0 10px;
+    }
+
+    li a{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+}

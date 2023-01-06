@@ -26,3 +26,19 @@
 .errorLink:hover {
     text-decoration: underline;
 }
+
+/* Mobile Version */
+
+@media (max-width:768px) {
+
+    .error img{
+        height: 99px;
+        width: 198px;
+    }
+
+    .errorText{
+        font-size: 18px;
+        width: 80%;
+        margin: 20px 0;
+    }
+}

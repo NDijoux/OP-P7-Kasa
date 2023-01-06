@@ -72,7 +72,6 @@ function Lodging() {
            </div>
         </div>
      );
-    // en attente de la fin du Slider 
 }
 
 export default Lodging;

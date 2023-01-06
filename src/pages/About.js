@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImgD from '../assets/about.png';
+import AboutImgM from '../assets/AboutMobile.png';
 import DropDown from "../components/DropDown";
 import '../style/pages/About.css';
 
@@ -32,6 +33,11 @@ function About() {
                 <img
                     className="about__img"
                     src={AboutImgD}
+                    alt="paysage de montagne"
+                />
+                <img
+                    className="about__imgM"
+                    src={AboutImgM}
                     alt="paysage de montagne"
                 />
             </section>

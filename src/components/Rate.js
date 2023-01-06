@@ -17,4 +17,4 @@ import EmptyStar from "../assets/EmptyStar.png";
 
 export default Rate
 
-   // construire div + classname avec le range.map = en fonction de l'ID = verifier > ou =  qui definit une valeur grise ou rouge en fonction
+

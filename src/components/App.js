@@ -4,7 +4,6 @@ import Home from '../pages/Home';
 import Lodging from '../pages/Lodging';
 import About from '../pages/About';
 import NotFound from '../pages/NotFound';
-//import Data from '../data/Data.json'
 
 
 

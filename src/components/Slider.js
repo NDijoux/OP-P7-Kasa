@@ -1,5 +1,3 @@
-// traitement possible en css ou framework  = code sois même via css recommandé 
-
 import React from 'react';
 import { useState, useEffect } from 'react';
 import ArrowRight from '../assets/ArrowRight.png';

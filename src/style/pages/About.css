@@ -14,6 +14,10 @@
     width: 90%;
 }
 
+.about__imgM {
+    display: none;
+}
+
 .dropdown {
     display: flex;
     flex-direction: column;
@@ -52,4 +56,41 @@
     background: #F6F6F6;
     border-radius: 5px;
     margin: 0;
+}
+
+/* Mobile Version */
+
+@media all and (max-width:630px) {
+
+    .about__img{
+        display: none;
+    }
+
+    .about__imgM{
+        display: inherit;
+        width: 90%;
+        object-fit: contain;
+    }
+
+    .dropdown{
+        margin-top: 10px;
+    }
+
+    .dropdown__p{
+        font-size: 14px;
+    }
+    
+    .dropdown__content{
+        width: 90%;
+    }
+
+    .dropdown__button{
+        font-size: 14px;
+        padding-right: 15px;
+    }
+
+    .about .dropdown__button{
+        padding: 0 15px 0 15px;
+    }
+
 }
